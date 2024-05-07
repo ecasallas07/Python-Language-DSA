@@ -1,0 +1,19 @@
+
+Asymptotic Analysis
+The idea of the Asymptotic analysis is to have a measure of the eficiency  of algorithms that  don't depend  on machine-specific.
+
+Asymptotic notation
+Are mathematical tools  to represent  the time complexity  of algorithms for  asymptotic analysis.
+- Asymptotic analysis allows for the comparison of algorithms’ space and time complexities by examining 
+their performance characteristics as the input size varies.
+
+Asymptotic notations
+- Big O
+- Big Omega
+- Big theta
+
+Theta notation
+Encloses the function from above and below,it is used for analyzinf the average-case complexity of algorithm
+
+Big notation
+Represent the upper bound of the running time
