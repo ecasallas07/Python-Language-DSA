@@ -1,6 +1,8 @@
 # Programming Competitive
 
-# DAY 1
+# WEEK-1
+
+## DAY 1
 
 ### Concepts and introduction
 
@@ -44,7 +46,9 @@ Languages:
 - Python
 - C++
 
-## Problem solving strategies
+## Day 2
+
+### Problem solving strategies
 
 1. Problem analysis
 
@@ -64,3 +68,90 @@ Different approaches:
 
 
 4. Reflection and continuous learning
+
+
+# WEEK-2
+
+### Analysis of complexity
+
+**Uses:**
+
+- Complexity Analysis determines the **amount of time and space** resources required to execute it
+- Complexity helps to determine the **difficulty of a problem**
+
+** Most important Notations:**
+
+- **Big O** = The worst-case
+- **Omega** = The best-case
+- **Theta** = Analyzing the average-case
+
+
+#### Mathematical Representation of Big-O Notation:
+
+```bash
+O(g(n)) = { f(n): there exist positive constants c and n0 such that 0 ≤ f(n) ≤ cg(n) for all n ≥ n0 }
+```
+Spanish - Explicacion de la representacion matematica de Big-O Notation
+
+Me: Esta representacion indica que f(n) que es la funcion de entrada, debe tener una constante c y un n0, n0 significa que cuando se cruce por ultima vez f(n) y cg(n), es como si desde ese punto cg(n) empiza a separarse de f(n) siendo un limite superior al runtime f(n), por ello primero se especifica que todas las entradas o inputs sean postivos **0 ≤ f(n)** y luego que cg(n) sea mayor que f(n) cuando todas las entradas n sean mayores que el punto 0.
+
+![Big0](Big0.jpg)
+
+#### Time Complexity
+
+ Define as the amount of time taken by an algorithm to run  as function of the length of the input.
+
+
+#### Space Complexity
+
+The amount of memory required by the algorithm to solve a given problem is called the space complexity of the algorithm
+
+
+#### Types of Complexity 
+
+1. Constant Complexity --> **O(1)**
+
+2. Logarithmic Complexity -> **O(log n)** base 2
+
+3. Linear Complexity --> **O(n)**
+
+4. Quadratic Complexity --> **O(n2)**
+
+5. Exponential Complexity --> **O(2N)**
+
+### Images about the Complexity analysis:
+
+![Notation](Algorithms-notation.png)
+![Analysis](Analisys-Algorithm.png)
+
+## Examples in python in the path --> code/Asymptotic_Notation/files*.py
+
+---
+---
+# Data structure
+
+Systematic way of organizing data, so that it can be used efficiently.
+
+**Data structures are classified into two types:**
+- **Linear data structures** --> Elements are accessed in a sequential order = : Linked Lists, Stacks and Queues.
+- **Non-linear data structures** --> Elements of this data structure are stored/accessed in a non-linear order. = Trees and graphs.
+
+
+### The primitive data types:
+Provided by many programming languages are: int, float, char, double, bool,
+
+### User defined data types:
+Good examples of user defined are data types: structures in C/C + + and classes in Java.
+
+### Abstract data types (ADTs):
+We combine the data structures with their operations and we call this Abstract Data Types (ADTs).
+
+1. Declaration of data
+2. Declaration of operations
+
+
+Page 37 book
+
+# Algorithm
+
+An algorithm is the step-by-step unambiguous instructions to solve a given problem.

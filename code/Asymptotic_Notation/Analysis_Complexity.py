@@ -1,3 +1,6 @@
+import random
+
+
 def test(n):
     j = 1 # --> 1 time = O(1)
     for i in range(1,int(n/3)):  # --> n times = O(n)
@@ -44,3 +47,39 @@ def binar_search(array,traget):
     
 # complexity time 1 x 1 x 1 x 1 x log n = O(log n) Divide el array en la busqueda
  
+
+
+# Algorithm 3 or example
+
+a3, b3 = 0 # --> O(1)
+N=10 # --> O(1)
+M=12 # --> O(1)
+for i3 in range(N):   # --> O(N)
+    a3 = a3 + random() 
+    
+for i3 in range(M): # --> O(N)
+    b3 = b3 + random()
+    
+    
+    
+# complecity time  O(N + N) + 3 = 0(N + N)
+
+
+# Algorithm 4 or example
+
+a4 = 0  # --> O(1)
+for i4 in range(N):  # -->O(N)
+  for j4 in reversed(range(i4,N)): # --> O(N)
+    a4 = a4 + i4 + j4
+
+# complecity time O(N) * O(N) + O(1) = O(N2)
+
+
+
+# Algorithm 5 or example
+
+a5 = 0  # -->0(1)
+i5 = N  # --> O(1)
+while (i5 > 0):  # --> 0(N)
+  a5 += i5
+  i5 //= 2  # --> O(log n) Divide i lo que significa que i para llegar a 0 lo hace avanzado por la mita de i total evitando el recorrido completo por un recorrido la mitad de rapido
