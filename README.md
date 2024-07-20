@@ -150,7 +150,6 @@ We combine the data structures with their operations and we call this Abstract D
 2. Declaration of operations
 
 
-Page 37 book
 
 # Algorithm
 
