@@ -151,6 +151,19 @@ We combine the data structures with their operations and we call this Abstract D
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 # Algorithm
 
 An algorithm is the step-by-step unambiguous instructions to solve a given problem.
+
+
