@@ -39,6 +39,12 @@ and class elif for import nonlocal raise
 - val in s containment check
 - val not in s non-containment check
 
+
+# Operators for Sets and Dictionaries
+- key in s containment check
+- key not in s non-containment check
+
+
 # Calling Syntax Description
 
 - abs(x) Return the absolute value of a number.
@@ -78,7 +84,45 @@ and class elif for import nonlocal raise
 
 # Function files
 
+Calling Syntax Description
+- fp.read( ) Return the (remaining) contents of a readable file as a string.
+- fp.read(k) Return the next k bytes of a readable file as a string.
+- fp.readline( ) Return (remainder of) the current line of a readable file as a string.
+- fp.readlines( ) Return all (remaining) lines of a readable file as a list of strings.
+- for line in fp: Iterate all (remaining) lines of a readable file.
+- fp.seek(k) Change the current position to be at the kth byte of the file.
+- fp.tell( ) Return the current position, measured as byte-offset from the start.
+- fp.write(string) Write given string at current position of the writable file.
+- fp.writelines(seq)
+- Write each of the strings of the given sequence at the current
+- position of the writable file. This command does not insert
+- any newlines, beyond those that are embedded in the strings.
+- print(..., file=fp) Redirect output of print function to the file.
 
 
-page 33
+# Common Exception Types
 
+- Exception --> A base class for most error types
+- AttributeError Raised by syntax obj.foo, if obj has no member named foo
+- EOFError Raised if “end of file” reached for console or file input
+- IOError Raised upon failure of I/O operation (e.g., opening file)
+- IndexError Raised if index to sequence is out of bounds
+- KeyError Raised if nonexistent key requested for set or dictionary
+- KeyboardInterrupt Raised if user types ctrl-C while program is executing
+- NameError Raised if nonexistent identifier used
+- StopIteration Raised by next(iterator) if no element; see Section 1.8
+- TypeError Raised when wrong type of parameter is sent to a function
+- ValueError Raised when parameter has invalid value (e.g., sqrt(−5))
+- ZeroDivisionError Raised when any division operator used with 0 as divisor
+
+```python
+def sqrt(x):
+    if not isinstance(x, (int, float)):
+        raise TypeError( x must be numeric )
+    elif x < 0:
+        raise ValueError( x cannot be negative )
+```
+# A second philosophy, often embraced by Python programmers, is that “it is easier to ask for forgiveness than it is to get permission.”
+
+
+Page 61
