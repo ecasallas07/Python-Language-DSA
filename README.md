@@ -150,6 +150,23 @@ We combine the data structures with their operations and we call this Abstract D
 2. Declaration of operations
 
 
+___
+
+Spanish steps to solution
+
+- **Lee el problema cuidadosamente:** Asegúrate de entender completamente el problema y los requisitos antes de comenzar.
+
+- **Identifica la entrada y salida:** Define claramente lo que el programa debe recibir y producir.
+
+- **Descompón el problema:** Si el problema es complejo, intenta dividirlo en partes más pequeñas y manejables.
+
+- **Haz un boceto de la solución:** Esboza un plan o pseudo-código para la solución antes de empezar a programar.
+
+
+
+
+___
+
 
 
 

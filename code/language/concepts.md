@@ -172,6 +172,38 @@ for k, v in mapping.items( ):
 
 - dir( ) and vars( )
 
+#  First-Class Objects
+
+In this case, we have not created a new function, we have simply defined scream
+as an alias for the existing print function.
+
+scream = print 
+scream( Hello )
 
 
-Page 69
+# Import statement
+
+While the built-in namespace includes a few mathematical functions (e.g., abs, min, max, round), many more
+are relegated to the math module (e.g., sin, cos, sqrt).
+
+- from math import pi, sqrt // --> specific resources
+- from math import * // --> all resources
+- import math  // --->  example user: math.pi or math.sqrt(2).
+
+
+- Existing Modules
+
+Module Name // Description
+- array // Provides compact array storage for primitive types.
+- collections // Defines additional data structures and abstract base classes involving collections of objects.
+- copy //  Defines general functions for making copies of objects.
+- heapq // Provides heap-based priority queue functions (see Section 9.3.7).
+- math // Defines common mathematical constants and functions.
+- os // Provides support for interactions with the operating system.
+- random  // Provides random number generation.
+- re // Provides support for processing regular expressions.
+- sys // Provides additional level of interaction with the Python interpreter.
+- time // Provides support for measuring time, or delaying a program.
+
+
+Page 76 -> solution projects
