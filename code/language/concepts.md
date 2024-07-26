@@ -125,4 +125,53 @@ def sqrt(x):
 # A second philosophy, often embraced by Python programmers, is that “it is easier to ask for forgiveness than it is to get permission.”
 
 
-Page 61
+
+# Iterators and Generators
+
+
+# Iteration
+
+- **An iterator** is an object that manages an iteration through a series of values. If
+variable, i, identifies an iterator object, then each call to the built-in function,
+next(i), produces a subsequent element from the underlying series, with a
+StopIteration exception raised to indicate that there are no further elements.
+
+- **An iterable** is an object, obj, that produces an iterator via the syntax iter(obj).
+
+# Generators
+Spanish:
+    Los generadores son una forma de crar objetos iterables, ya que con la palabara reservada yield, este no almacena en RAM
+    sino que retorna un valor sobre el objeto.
+    
+    Al final genera es un objeto iterable , y para obtener los valores de este objeto iterable se usa la palabra reservada next()
+
+
+### Dictionary
+
+The dictionary class supports methods **keys( )**, **values( )**, and **items( )**
+
+# Comprehension Syntax
+
+[ expression for value in iterable if condition ]
+
+- [ k k for k in range(1, n+1) ] list comprehension
+- { k k for k in range(1, n+1) } set comprehension
+- ( k k for k in range(1, n+1) ) generator comprehension
+- { k:k k for k in range(1, n+1) } dictionary comprehension
+
+Loops
+
+for x, y in [ (7, 2), (5, 8), (6, 4) ]:
+
+for k, v in mapping.items( ):
+
+# Simultaneous Assignments
+
+- x, y, z = 6, 2, 5
+- j, k = k, j
+
+- dir( ) and vars( )
+
+
+
+Page 69
