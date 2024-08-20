@@ -10,37 +10,53 @@ few bills and coins as possible.
 """
 
 
-def currency_exchange(pay,debt):
-    
-    tickets = [100.000,50.000,20.000,10.000,5.000,2.000,1.000]
-    coins = [500,200,100,50]
+def ticktes(diference):
 
-    diference = abs(pay - debt)
-    
+    tickets = [100.000,50.000,20.000,10.000,5.000,2.000,1.000]
+
     if diference in tickets:
         print(100)
         return diference
 
-    
     # bill = 0
     result=[]
-    co = 0   
+    co = 0
     print(diference)
-      
+
     while diference >1.000:
         #tickets
         if co == len(tickets) - 1 :
             co=0
-        # coins    
-        
+
+
         if tickets[co] <= diference:
             result.append(tickets[co])
             diference -= tickets[co]
             co=0
         else:
             co+=1
-            
-            
+
+
     return result
-        
-print(currency_exchange(300.000,20.500))
+
+
+
+def coins(pay, debt):
+    coins = [500, 200, 100, 50]
+    difference = pay - debt
+
+    # Convertir la diferencia a centavos
+    decimal  = str(difference).split('.')[1]
+    coin_pay = int(round(int(decimal) * 100))
+
+    result = []
+    for coin in coins:
+        while coin_pay >= coin:
+            coin_pay -= coin
+            result.append(coin)
+
+    print(ticktes(int(difference)))
+
+    return result
+
+print(coins(300.000,20.500))
