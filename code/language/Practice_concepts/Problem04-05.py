@@ -5,6 +5,8 @@
     can be done on a separate line. After each such input, you should output
     to the Python console what would be displayed on your calculator.
 """
+
+import re
 def calculate_interactive():
 
     view = []
@@ -18,9 +20,26 @@ def calculate_interactive():
         if input_v == '=':
 
             # TODO: solution operation numbers and operators
-            values.remove('=')
-            str_values = int(''.join(values))
-            print(str_values)
+            operators = []
+            rr_op =[]
+            ar_num = []
+            for i in values:
+                op = re.findall(r'[+\-/*]',i)
+                num = re.findall(r'\d+',i)
+                if op:
+                    rr_op.append(op)
+                if num:
+                    ar_num.append(num)
+
+            for i in range(len(rr_op)):
+                count = 0
+                match rr_op[i]:
+                    case '+':
+                        if i == 0:
+                            count = ar_num.pop(i) + ar_num.pop(i+1)
+                        else:
+                            count += ar_num[]
+
             break
 
 calculate_interactive()
