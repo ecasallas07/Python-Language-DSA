@@ -161,26 +161,20 @@ Spanish steps to solution
 - **Descompón el problema:** Si el problema es complejo, intenta dividirlo en partes más pequeñas y manejables.
 
 - **Haz un boceto de la solución:** Esboza un plan o pseudo-código para la solución antes de empezar a programar.
-
-
-
-
 ___
-
-
-
-
-
-
-
-
-
-
-
-
 
 # Algorithm
 
 An algorithm is the step-by-step unambiguous instructions to solve a given problem.
 
+
+# Design Patterns
+**Recursion (Chapter 4)**
+
+• Amortization (Sections 5.3 and 11.4)
+• Divide-and-conquer (Section 12.2.1)
+• Prune-and-search, also known as decrease-and-conquer (Section 12.7.1)
+• Brute force (Section 13.2.1)
+• Dynamic programming (Section 13.3).
+• The greedy method (Sections 13.4.2, 14.6.2, and 14.7)
 
