@@ -38,6 +38,8 @@ class Perro:
         print(f"Camina: {pasos} pasos")
 
 
+
+# intanciar clase para a ser objeto
 mi_perro = Perro()  # Objeto
 print(mi_perro.name) # De esta forma llamo un atributo de instancia
 print(Perro.especie) # Llamar atributo de clase, no necesita metodo
