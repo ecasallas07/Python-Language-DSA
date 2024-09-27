@@ -40,7 +40,7 @@ class Perro:
 
 
 # intanciar clase para a ser objeto
-mi_perro = Perro()  # Objeto
+mi_perro = Perro('pooky','gato')  # Objeto
 print(mi_perro.name) # De esta forma llamo un atributo de instancia
 print(Perro.especie) # Llamar atributo de clase, no necesita metodo
 

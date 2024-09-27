@@ -11,8 +11,8 @@ class Book:
         self.name = name
 
     @classmethod
-    def class_metodo(cls):
-        print(f"Metodo de clase")
+    def class_metodo(cls,):
+        print(f"Metodo de clase ")
 
     @staticmethod
     def metodo_estatico():
@@ -22,7 +22,7 @@ class Book:
 # Metodo de clase
 # Los metodos de clase no pueden acceder a los atributos de la instancia
 # modifican los atributos de la clase
-Book.class_metodo()
+print(Book.class_metodo())
 
 # Metodo estatico
 # no pueden modificar el estado ni de la clase ni de la instancia

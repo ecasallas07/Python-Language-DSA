@@ -1,14 +1,21 @@
 
 
-class Padre():
+class Padre:
 
-
-    def __init__(self):
-        print('Father initialization')
+    def __init__(self,name,parent):
+        self.name = name
+        self.parent = parent
+        print('{parent} {name} initialization')
 
 
 class Hijo(Padre):
-    pass
+
+    def __init(self,name,parent,lastname):
+        super().__init__(name,parent) # super nos permite acceder a metodos de la clase padre
+        self.lastname = lastname
+
+
+hijo = Hijo('Esteban','Son','Casallas')
 
 
 
@@ -72,3 +79,9 @@ class Perra(Animal):
         # Alternativa 2 --> mejor opcion por el super()
         super().__init__(especie, edad)
         self.dueño = dueño
+
+
+# Herencia multiple
+
+class Gato(Animal,Padre):
+    pass
