@@ -169,6 +169,7 @@ An algorithm is the step-by-step unambiguous instructions to solve a given probl
 
 
 # Design Patterns
+
 **Recursion (Chapter 4)**
 
 • Amortization (Sections 5.3 and 11.4)
@@ -177,4 +178,8 @@ An algorithm is the step-by-step unambiguous instructions to solve a given probl
 • Brute force (Section 13.2.1)
 • Dynamic programming (Section 13.3).
 • The greedy method (Sections 13.4.2, 14.6.2, and 14.7)
+
+# Data Structures
+• Array - Week 1
+• Matrix - Week 2
 
